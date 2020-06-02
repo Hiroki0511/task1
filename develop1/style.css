@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+    
+
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header {
+	background-color: #EC715F;
+	height: 70px;
+	width: 100%;
+}
+
+.header-image{
+	float: left;
+	width: auto;
+	height: 70px;
+
+}
+
+.headline{
+	width: 1024px;
+	margin: 0px auto;
+
+}
+.nav-list{
+	line-height: 70px;
+	width: 500px;
+	margin-left: auto;
+
+}
+.nav-list-item{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 16px;
+	float: left;
+	
+}
+
+.main-visual{
+	width: 100%;
+	height: 650px;
+	background-image: url("mv.png");
+	background-size: cover;
+}
+.main-visual-content{
+	width: 100%;
+	display: inline-block;
+	padding-top: 200px;
+    text-align: center;
+}
+.main-visual-title{
+	font-size: 64px;
+	color: #FAFAFA;
+	margin-bottom: 10px;
+}
+.main-visual-text{
+	font-size: 20px;
+	color: #FAFAFA;
+}
+
+.main-content{
+	text-align: center;
+	
+	
+
+}
+
+.odd{
+	width: 100%;
+	background-color: #ECEFF1;
+
+}
+.main-part{
+	padding-top: 90px;
+	padding-bottom: 90px;	
+	position: relative;
+}
+
+
+
+.main-title{
+	font-size: 32px;
+	color: #000000;
+	position: relative;
+
+}
+
+.main-title:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 70px; /*下線の幅*/
+  height: 3px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #EC715F; /*下線の色*/
+}
+
+.main-text{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.Portfolio{
+	text-align: center;
+	display: inline-block;
+	width: 920px;
+	
+
+
+}
+.Portfolio-box{
+	float: left;
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+    background-position: center;
+
+}
+
+.Portfolio-box:nth-child(1) {
+	background-image: url("sketch.jpg");
+	margin-right: 10px;
+	
+}
+.Portfolio-box:nth-child(2) {
+	background-image: url("websuku.png");
+    margin-right: 10px;
+
+}
+.Portfolio-box:nth-child(3) {
+	background-image: url("write.jpg");
+
+}
+.Portfolio-box:nth-child(6){
+	background-image: url("webcamp-mother.png");
+    margin-top: 10px;
+}
+.Portfolio-box:nth-child(5){
+	background-image: url("talk.jpg");
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.Portfolio-box:nth-child(4){
+	background-image: url("webcamp.png");
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.Feature-unit{
+	display: inline-block;
+}
+.Feature-text{
+	width: 320px;
+	height: auto;
+	float: left;
+	margin-left: 10px;
+	
+}
+.Feature-text i{
+	font-size: 60px;
+}
+.Feature-title{
+	font-size: 20px;
+	color: #000000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Profile-unit{
+	display: inline-block;
+	
+}
+.image-margin{
+	width: 512px;
+	float: left;
+	
+
+	
+}
+.Profile-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.Profile-box{
+	font-size: 20px;
+	width: 512px;
+	float: left;
+	text-align: left
+}
+
+.Profile-text{
+	font-size: 16px;
+	color: #000000;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.contact-unit{
+	display: inline-block;
+
+}
+
+.contact-margin{
+	float: left;
+	width: 400px;
+	text-align: center;
+	padding-left:110px;
+
+}
+
+
+.contact-way,.contact-sns{
+	text-align: left;
+	display: inline-block;
+	float: left;
+	width: 200px;
+}
+
+.contact-title {
+	font-size: 20px;
+	padding-bottom: 5px;
+    
+}
+.tel{
+	padding-top: 20px;
+}
+.fab{
+	font-size: 50px;
+	padding-right: 20px;
+}
+footer{
+	background-color: #EC715F;
+	height: 60px;
+}
+.footer-text{
+	font-size: 16px;
+	color: #FAFAFA;
+	line-height: 60px;
+}
+
+@media screen and (max-width:767px) {
+	header, body, footer{
+		width: 100%;
+	}
+	header{
+		height: 50px;
+		text-align: right;
+	}
+
+	.header-image{
+		float: left;
+	}
+	#humberger {
+		display: inline-block;
+		float: left;
+        position: relative;
+        left: 50%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        height: 36px;
+        width: 36px;
+        box-sizing: border-box;
+        background-color: #EC715F;
+        border: 2px solid #FAFAFA;
+    }
+    #humberger div {
+        position: absolute;
+        left: 4px;
+        height: 4px;
+        width: 24px;
+        background-color: #FAFAFA;
+        
+        box-sizing: border-box;
+    }
+    #humberger div:nth-of-type(1) {
+        top: 4px;
+    }
+    #humberger div:nth-of-type(2) {
+        top: 14px;
+    }
+    #humberger div:nth-of-type(3) {
+        bottom: 4px;
+    }
+    .headline{
+    	width: 90%;
+    }
+	.header-image{
+		height: 50px;
+	}
+	.main-title, .main-text{
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav-list-item{
+		display: none;
+	}
+	.main-visual-content{
+		width: 90%;
+    	margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.main-visual{
+		background-image: url("code.png");
+		background-position: top center;
+		height: 650px;
+    }
+
+    .main-visual-title{
+    	font-size: 40px;
+	
+    }
+    .main-visual-text{
+    	font-size: 18px;
+    }
+    .Portfolio{
+    	width: 300px;
+    	text-align: center;
+    	
+    }
+    .Portfolio-box{
+    	width: 90%;
+    	margin-left: 5%;
+		margin-right: 5%;
+    	float: none;
+    }
+    .Feature-unit{
+    	width: 100%;
+    	padding-left: 5%;
+    	padding-right: 5%;
+
+    }
+    .Feature-paragraph{
+    	width: 100%;
+    	padding-right: 5%;
+		padding-left: 5%;
+    	margin-bottom: 10px;
+
+    }
+    .Feature-text{
+    	margin:0 auto;
+    }
+    .Portfolio-box:nth-child(odd) {
+    	display: none;
+　　}
+    .image-margin{
+    	width: 250px;
+    	height: 250px;
+    	float: none;
+    	margin: 0 auto;
+	
+    }
+    .Profile-unit{
+    	width: 100%;
+    }
+    .Profile-box{
+    	width: 100%;
+    }
+    .Profile-myname{
+    	padding-top: 20px;
+    }
+
+    .Profile-text, .Profile-myname, .Profile-skill{
+    	width: 90%;
+    	margin-left: 5%;
+		margin-right: 5%;
+    	text-align: center;
+    }
+    .contact-way, .contact-sns{
+    	text-align: center;
+    }
+    .contact-margin{
+    	width: 100%;
+    }
+    .fab{
+    	padding-right: 8px;
+
+    }
+    .sns{
+    	padding-top: 20px;
+    }
+    .contact-way,.contact-sns{
+    	width: 100%;
+    	
+    	
+    }
+    .contact-margin{
+    	width: 100%;
+    	padding-left:initial;
+    	
+
+    }
+    footer{
+    	height: 60px;
+    	font-size: 16px;
+    }
+
+}
+
